@@ -1,3 +1,78 @@
-#heading {
-    color: red;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.675rem;
+  background-color: #fff;
+  border-bottom: 1px solid #d8dada;
+}
+
+.logo {
+  color: #fc1919;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-right: 1rem;
+}
+
+.nav-items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items ul li {
+  margin: 0 0.5rem;
+  padding: 0.75rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.restaurant-list {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.restaurant-item {
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #aaa;
+}
+
+.restaurant-img-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.restaurant-img-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restarant-details {
+  padding: 0.5rem;
+  h2 {
+    font-size: 1rem;
+  }
 }
