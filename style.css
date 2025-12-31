@@ -39,6 +39,21 @@ body {
   padding: 0.75rem;
 }
 
+.btn-login,
+.btn-logout {
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #19fc9a;
+}
+
+.btn-logout {
+  color: #fff;
+  background-color: chocolate;
+}
+
 main {
   padding: 1rem;
 }
@@ -53,6 +68,7 @@ main {
 }
 
 .restaurant-item {
+  overflow: hidden;
   cursor: pointer;
   border-radius: 0.25rem;
   border: 0.0625rem solid #aaa;
@@ -84,4 +100,67 @@ main {
   border: 0.0625rem solid #aaa;
   border-radius: 1rem;
   background-color: #fff;
+}
+
+/* shimmer */
+
+.shimmer-list {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.shimmer-item {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #aaa;
+}
+
+.shimmer-img-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background-color: #f5f5f5;
+  margin-bottom: 0.25rem;
+}
+
+.shimmer-details {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.shimmer-details span {
+  height: 0.75rem;
+  width: 100%;
+  background: #f5f5f5;
+}
+
+button {
+  cursor: pointer;
+}
+
+.search-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-box {
+  padding: 1rem;
+  height: 1.5rem;
+  border: 0.0625rem solid #aaa;
+  border-radius: 1rem;
+}
+
+.btn-search {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 0.0625rem solid #686363;
+  border-radius: 1rem;
+  background-color: #686363;
 }
