@@ -27,7 +27,7 @@ const Body = () => {
     );
   };
 
-  return resList.length === 0 ? (
+  return filteredResList.length === 0 ? (
     <Shimmer />
   ) : (
     <main>
